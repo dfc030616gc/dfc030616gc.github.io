@@ -3,12 +3,199 @@
   <head>
     <meta charset="utf-8">
     <title>test.0.1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
   </head>
   <body style="background-color:silver">
-    <a class="btn btn-warning" href="index.html" role="button">点击返回首页</a>
-<div class="row">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">主页</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            作业列表
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="puzzle.html">谜题与问答</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--问答-->
+<div class="card text-center" style="width:50rem; position: absolute; left:500px">
+<div class="card-header">
+问答
+</div>
+<div class="card-body">
+<blockquote class="blockquote mb-0">
+  <p>忒修斯谜题四个策略中哪一个策略认为同一性的判断在于人？</p>
+  <footer class="blockquote-footer">选择请点击下列<cite title="Source Title">选项</cite></footer>
+
+  <div class="modal fade" id="example本质" aria-hidden="true" aria-labelledby="example本质Label" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="example本质Label">戳啦</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        本质的观点认为同一性是持存物的本质。
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#example本质2" data-bs-toggle="modal">去看提示</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="example本质2" aria-hidden="true" aria-labelledby="example本质Labe2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="example本质Label2">提示</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        答案是稳定的指称关系
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#example本质" data-bs-toggle="modal">返回</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary" data-bs-target="#example本质" data-bs-toggle="modal">本质</button>
+
+<div class="modal fade" id="example基底" aria-hidden="true" aria-labelledby="example基底Label" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="example基底Label">戳啦</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      基底的观点认为不变的基底构成同一性。
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-target="#example基底2" data-bs-toggle="modal">去看提示</button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="example基底2" aria-hidden="true" aria-labelledby="example基底Label2" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="example基底Label2">提示</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      答案是稳定的指称关系
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-target="#example基底" data-bs-toggle="modal">返回</button>
+    </div>
+  </div>
+</div>
+</div>
+<button class="btn btn-primary" data-bs-target="#example基底" data-bs-toggle="modal">基底</button>
+
+<div class="modal fade" id="example因果" aria-hidden="true" aria-labelledby="example因果Label" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="example因果Label">戳啦</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      连续的因果关系的观点认为同一性在于事物在空间和时间上的连续性，并且这种连续性是以特定的因果关系维系的。
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-target="#example因果2" data-bs-toggle="modal">去看提示</button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="example因果2" aria-hidden="true" aria-labelledby="example因果Label2" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="example因果Label2">提示</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      答案是稳定的指称关系
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-target="#example因果" data-bs-toggle="modal">返回</button>
+    </div>
+  </div>
+</div>
+</div>
+<button class="btn btn-primary" data-bs-target="#example因果" data-bs-toggle="modal">连续的因果关系</button>
+
+<div class="modal fade" id="example指称" aria-hidden="true" aria-labelledby="example指称Label" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="example指称Label">正解</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      稳定的指称关系观点认为同一性在于人，在于使用词语的方式。
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-target="#example指称2" data-bs-toggle="modal">去看提示</button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="example指称2" aria-hidden="true" aria-labelledby="example指称Label2" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="example指称Label2">提示</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      已经对了就不用看提示啦
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-target="#example指称" data-bs-toggle="modal">返回</button>
+    </div>
+  </div>
+</div>
+</div>
+<button class="btn btn-primary" data-bs-target="#example指称" data-bs-toggle="modal">稳定的指称关系</button>
+
+</blockquote>
+</div>
+</div>
+
+<!--<input type="button" onclick='location.href=("index.html")' />//在本页面打开-->
+
+
     <!-- card 忒修斯的船 -->
     <div class="card text-center" style="width: 25rem; text-indent:2em; background-color:seashell;">
   <img src="http://thepaper-prod-oldimagefromnfs.oss-cn-shanghai.aliyuncs.com/image/21/731/370.jpg" class="card-img-top" alt="...">
@@ -94,162 +281,12 @@
     </li>
   </ul>
 </div>
-
-<!-- 纽卡姆悖论 -->
-<div class="card text-center" style="width: 25rem; text-indent:2em; background-color:seashell;">
-<img src="http://thepaper-prod-oldimagefromnfs.oss-cn-shanghai.aliyuncs.com/image/21/731/370.jpg" class="card-img-top" alt="...">
-<div class="card-body" style="background-color:seashell;">
-<h5 class="card-title">谜题</h5>
-<p class="card-text">内容</p>
-<!-- 水平折叠的霍布斯的延申 -->
-    <p>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">
-    延申
-  </button>
-</p>
-<div style="min-height: 120px;">
-  <div class="collapse collapse-horizontal" id="collapseWidthExample2">
-    <div class="card card-body" style="width: 22rem;">
-      假想
-    </div>
-  </div>
-</div>
-
-</div>
-<ul class="list-group list-group-flush">
-<li class="list-group-item">
-  <p>
-    <button class="btn btn-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#ok1" aria-expanded="false" aria-controls="collapseExample">
-      策略一：本质
-    </button>
-  </p>
-  <div class="collapse" id="ok1">
-    <div class="card card-body" style="background-color:whitesmoke">
-      <p class="text-primary">
-
-      </p>
-    </div>
-  </div>
-</li>
-<li class="list-group-item">
-  <p>
-    <button class="btn btn-success-emphasis bg-success-subtle border border-success-subtle rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#ok2" aria-expanded="false" aria-controls="collapseExample">
-      策略二：基底
-    </button>
-  </p>
-  <div class="collapse" id="ok2">
-    <div class="card card-body"style="background-color:whitesmoke">
-      <p class="text-success">
-
-      </p>
-    </div>
-  </div>
-</li>
-<li class="list-group-item">
-  <p>
-    <button class="btn btn-info-emphasis bg-info-subtle border border-info-subtle rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#ok3" aria-expanded="false" aria-controls="collapseExample">
-      策略三：连续的因果关系
-    </button>
-  </p>
-  <div class="collapse" id="ok3">
-    <div class="card card-body" style="background-color:whitesmoke">
-      <p class="text-info">
-
-      </p>
-    </div>
-  </div>
-</li>
-<li class="list-group-item">
-  <p>
-    <button class="btn btn-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#ok4" aria-expanded="false" aria-controls="collapseExample">
-      策略四：稳定的指称关系
-    </button>
-  </p>
-  <div class="collapse" id="ok4">
-    <div class="card card-body" style="background-color:whitesmoke">
-      <p class="text-warning">
-
-      </p>
-    </div>
-  </div>
-</li>
-</ul>
-</div>
-<!--xxx-->
-<!-- 纽卡姆悖论 -->
-<div class="card text-center" style="width: 25rem; text-indent:2em; background-color:seashell;">
-  <img src="https://img2.baidu.com/it/u=38473387,317128959&fm=253&fmt=auto&app=138&f=JPEG?w=731&h=500" class="card-img-top" alt="...">
-    <div class="card-body" style="background-color:seashell;">
-        <h5 class="card-title">纽卡姆悖论</h5>
-        <p class="card-text">假设你参加了一个电视节目，主持人向你展示了两个盒子。其中一个盒子是透明的，你能看见里面放了1万元。另一个盒子是不透明的，主持人告诉你，之前曾有读心师透视过你的心智，她知道你的选择，并且根据你的选择在盒子里放了100万，又或者什么都没放。具体来说，你可以选择两个盒子都要，也可以选择只要不透明的盒子；如果你全都要，那么读心师将在盒子里放入空气，否则她将放入100万元。那么你会选择全都要，还是选择只要不透明的盒子呢？</p>
-<!-- 情况分析 -->
-    <p>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample">
-    情况分析
-  </button>
-</p>
-<div style="min-height: 120px;">
-  <div class="collapse collapse-horizontal" id="collapseWidthExample3">
-    <div class="card card-body" style="width: 22rem;">
-      那么你会选择全都要，还是选择只要不透明的盒子呢？如果你考虑，读心师已经在盒子里放了钱或者放了空气，那么无论如何，你选择全都要总是拥有更多的收益：如果不透明盒子里是100万，那么你赚了101万；如果不透明盒子里是空气，至少你没有空手而归。但是如果你考虑，你的选择将会决定读心师之前是否往盒子里放钱，那么你应该选择只要不透明的盒子，因为这样读心师才会往里放100万。矛盾就此出现了。
-    </div>
-  </div>
-</div>
-
-</div>
-<ul class="list-group list-group-flush">
-<li class="list-group-item">
-  <p>
-    <button class="btn btn-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#niukamu1" aria-expanded="false" aria-controls="collapseExample">
-      情境
-    </button>
-  </p>
-  <div class="collapse" id="niukamu1">
-    <div class="card card-body" style="background-color:whitesmoke">
-      <p class="text-primary">
-        这个现金盒子的情景被称为纽卡姆悖论。其实，它并不是一个严格意义上的悖论，而是一个思想实验。表面上看，我们有一个极为简便的处理办法，那就是否定整个思想实验的大前提，即主张读心术是不可能的。
-        <br>不过，我们也需要在限定的意义上进行这项主张——假如读心师是通过观察或测量人的某种心里特性来预测人的行动，进而决定放钱或者不放钱，而事实表明所有或至少大多数参加节目的嘉宾都依照自己被测量的心理特性来决定自己的行动，那么整个情景仍然是可能的，因为这意味着嘉宾的选择并不是一次决策，无论嘉宾做了什么决定，另一种可能性早就是不可能的了。
-        <br>但是，如果嘉宾的选择确实是一次自由的决策，并且嘉宾完全知道这次节目的规则，那么情形则有所不同：嘉宾会陷入两难，因为嘉宾一方面知道钱已经放在盒子里了，他应该全都要；另一方面又知道读心师是根据自己的决定来放钱或空气的，他应该只要不透明的盒子。这时候，我们只好说，这种意义上的读心是不可能的了。
-      </p>
-    </div>
-  </div>
-</li>
-<li class="list-group-item">
-  <p>
-    <button class="btn btn-success-emphasis bg-success-subtle border border-success-subtle rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#niukamu2" aria-expanded="false" aria-controls="collapseExample">
-      延申
-    </button>
-  </p>
-  <div class="collapse" id="niukamu2">
-    <div class="card card-body"style="background-color:whitesmoke">
-      <p class="text-success">
-      当然，作为一个思想实验，读心术在这里只是一个象征。其认为，读心术所寓意的是原因在结果之后的因果关系。也许纽卡姆悖论要说的正是，发生在结果之后的原因，或者说来自时间上在后的决定性，是不可能的。
-      </p>
-    </div>
-  </div>
-</li>
-<li class="list-group-item">
-  <p>
-    <button class="btn btn-info-emphasis bg-info-subtle border border-info-subtle rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#niukamu3" aria-expanded="false" aria-controls="collapseExample">
-      分析
-    </button>
-  </p>
-  <div class="collapse" id="niukamu3">
-    <div class="card card-body"style="background-color:whitesmoke">
-      <p class="text-info">
-      这条悖论，是试验一个人是否相信自由意志论的“石蕊试纸”类型的悖论。对这个悖论的反应公平地区分出，愿意拿两个箱子的是自由意志论信徒，愿意拿B箱者是决定论（宿命论）信徒。而另一些人则争辩道：不管未来是完全决定的，还是不是完全决定的，这个悖论所要求的条件却是矛盾的。
-      </p>
-    </div>
-  </div>
-</li>
-
-</ul>
-</div>
-</div>
----------------------------------------------------------------------------------------------------------------------
+<!--------------------------------------------------------------------------------------------------------------------->
 
 -------------------------------------------------------------------------------------------
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" ></script>
+
 </html>
